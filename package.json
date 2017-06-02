@@ -1,0 +1,36 @@
+{
+  "name": "employee-directory",
+  "version": "1.0.0",
+  "description": "A directory of employees using AngularJS.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iza19/EmployeeDirectory.git"
+  },
+  "author": "iza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iza19/EmployeeDirectory/issues"
+  },
+  "homepage": "https://github.com/Iza19/EmployeeDirectory#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.31"
+  }
+}

@@ -4,3 +4,6 @@
 erl_crash.dump
 *.ez
 *.beam
+.DS_Store
+.idea/
+node_modules/
