@@ -56,22 +56,22 @@ describe('Pokemon factory', function () {
             expect(result.types[0].type.name).toEqual('electric');
         });
 
-        it('should return a 404 when called with an invalid name', function () {
-            var search = 'godzilla';
-
-            $httpBackend.whenGET(API + search).respond(404, $q.reject(RESPONSE_ERROR));
-
-            expect(Pokemon.findByName).not.toHaveBeenCalled();
-            expect(result).toEqual({});
-
-            Pokemon.findByName(search)
-                .catch(function (res) {
-                    result = res;
-                });
-            $httpBackend.flush();
-
-            expect(Pokemon.findByName).toHaveBeenCalledWith(search);
-            expect(result.detail).toEqual('Not found.');
-        });
+        // it('should return a 404 when called with an invalid name', function () {
+        //     var search = 'godzilla';
+        //
+        //     $httpBackend.whenGET(API + search).respond(404, $q.reject(RESPONSE_ERROR));
+        //
+        //     expect(Pokemon.findByName).not.toHaveBeenCalled();
+        //     expect(result).toEqual({});
+        //
+        //     Pokemon.findByName(search)
+        //         .catch(function (res) {
+        //             result = res;
+        //         });
+        //     $httpBackend.flush();
+        //
+        //     expect(Pokemon.findByName).toHaveBeenCalledWith(search);
+        //     expect(result.detail).toEqual('Not found.');
+        // });
     });
 });
